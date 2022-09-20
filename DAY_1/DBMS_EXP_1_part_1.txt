@@ -1,0 +1,16 @@
+Create database STUDENT; 
+use STUDENT;
+create table STUDENT(regno int(3),name varchar(15),gender char(1),mobileno int(10),city varchar(15));
+
+Output:-----
+
+mysql> desc STUDENT;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| regno    | int(3)      | YES  |     | NULL    |       |
+| name     | varchar(15) | YES  |     | NULL    |       |
+| gender   | char(1)     | YES  |     | NULL    |       |
+| mobileno | int(10)     | YES  |     | NULL    |       |
+| city     | varchar(15) | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
