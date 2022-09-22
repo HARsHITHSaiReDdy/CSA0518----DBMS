@@ -1,0 +1,31 @@
+ create table stu_progress(stu_NO int(10), Stu_Name varchar(30), Subject varchar(40), marks int(20));
+insert into stu_progress values(175,"sai","ECE",94);
+
+ insert into stu_progress values(189,"manoj","EEE",98);
+
+insert into stu_progress values(185, "Vimal", "CSE", 89);
+
+insert into stu_progress values(167,"raju","civil",88);
+
+output:--------
+select * from stu_progress;
++--------+----------+---------+-------+
+| stu_NO | Stu_Name | Subject | marks |
++--------+----------+---------+-------+
+|    185 | Vimal    | CSE     |    89 |
+|    175 | sai      | ECE     |    94 |
+|    189 | manoj    | EEE     |    98 |
+|    167 | raju     | civil   |    88 |
++--------+----------+---------+-------+
+alter table stu_progress add Stu_Dept varchar(50) ;
+insert into stu_progress values(153, "Asha", "OS", 69, "AI");
+ select * from stu_progress;
++--------+----------+---------+-------+----------+
+| stu_NO | Stu_Name | Subject | marks | Stu_Dept |
++--------+----------+---------+-------+----------+
+|    185 | Vimal    | CSE     |    89 | NULL     |
+|    175 | sai      | ECE     |    94 | NULL     |
+|    189 | manoj    | EEE     |    98 | NULL     |
+|    167 | raju     | civil   |    88 | NULL     |
+|    153 | Asha     | OS      |    69 | AI       |
++--------+----------+---------+-------+----------+
