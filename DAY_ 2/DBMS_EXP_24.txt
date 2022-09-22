@@ -1,0 +1,19 @@
+create table cars(Car_No int(10), Car_Name varchar(30), DOR date, Return_Date date);
+insert into cars values(18,"honda","2022-8-15","2024-8-25");
+insert into cars values(12,"kia","2022-1-7","2024-9-24");
+ insert into cars values(29,"benz","2020-4-27","2026-5-25");
+select *from cars;
++--------+----------+------------+-------------+
+| Car_No | Car_Name | DOR        | Return_Date |
++--------+----------+------------+-------------+
+|     18 | honda    | 2022-08-15 | 2024-08-25  |
+|     12 | kia      | 2022-01-07 | 2024-09-24  |
+|     29 | benz     | 2020-04-27 | 2026-05-25  |
++--------+----------+------------+-------------+
+output:--------
+select car_no, car_name from cars where return_date = '2026-05-25';
++--------+----------+
+| car_no | car_name |
++--------+----------+
+|     29 | benz     |
++--------+----------+
